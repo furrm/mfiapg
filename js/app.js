@@ -232,7 +232,7 @@ angular.module('app', ['app.finance.controllers', 'app.components', 'app.finance
         }
 
 
-        $scope.loginData = true;
+          $scope.loginData = true;
 
     })
 ;
