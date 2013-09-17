@@ -137,8 +137,9 @@ angular.module('app', ['app.finance.controllers', 'app.components', 'app.finance
         $scope.matterNotSelected = 1;
 
 
-        $scope.downloadingData = false;
-        $scope.haveMatterOverviewLifeToDate = 0;
+//        $scope.downloadingData = false;
+        $scope.haveMatterInfo = false;
+        $scope.haveMatterOverviewLifeToDate = false;
         $scope.haveWorkInProgress = false;
         $scope.haveUnpaidInvoices = false;
 
@@ -157,6 +158,12 @@ angular.module('app', ['app.finance.controllers', 'app.components', 'app.finance
         $scope.workInProgressStatus = 1;
         $scope.unpaidInvoicesStatus = 1;
 
+        // BUTTON STATES
+        $scope.matterInfoIsDisabled = true;
+        $scope.matterOverviewLifeToDateIsDisabled = true;
+        $scope.workInProgressIsDisabled = true;
+        $scope.unpaidInvoicesIsDisabled = true;
+
         $scope.switchMatter = function (matterNumber, matterName) {
 //
             // When switching over to a new matter, close the sliding menu...
@@ -171,10 +178,10 @@ angular.module('app', ['app.finance.controllers', 'app.components', 'app.finance
 
             $scope.matterSelected = 1;
 
-
             $scope.matterNotSelected = !$scope.matterNotSelected
 
             $scope.downloadingData = true;
+
 
 
             $scope.haveMatterOverviewLifeToDate = 0;
@@ -225,7 +232,7 @@ angular.module('app', ['app.finance.controllers', 'app.components', 'app.finance
         }
 
 
-          $scope.loginData = true;
+        $scope.loginData = true;
 
     })
 ;

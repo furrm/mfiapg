@@ -6368,6 +6368,8 @@ fieldset[disabled] .menu-activate-btn-default.active {
 }
 .panel-default-report {
   height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .panel-heading-report {
   border-top-right-radius: 3px;
@@ -6464,8 +6466,6 @@ body {
 /*! kapcha start:navbar */
 .view-wrapper {
   height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 .navbar {
   position: relative;

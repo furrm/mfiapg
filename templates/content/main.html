@@ -11,8 +11,8 @@
     <!--</div>-->
     <div class="row">
         <div class="col-md-3">
-            <!--<panel-clickable name="Matter Information" href="#/matter-overview-life-to-date"></panel-clickable>-->
-               <panel-button ng-disabled="!matterInfoStatus == 3" name="Matter Information" status="{{matterInfoStatus}}" link="#/matter-info"></panel-button>
+
+               <panel-button ng-disabled="matterInfoIsDisabled" name="Matter Information" status="{{matterInfoStatus}}" link="#/matter-info"></panel-button>
         </div>
         <div class="col-md-3">
             <panel-button name="Matter Overview Life To Date" status="{{matterOverviewLifeToDateStatus}}" link="#/matter-overview-life-to-date"></panel-button>
